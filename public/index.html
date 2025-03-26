@@ -22,26 +22,37 @@
     <link href="../src/style/tailwind.css" rel="stylesheet" />
   </head>
 
-  <body>
-    <div class="bg-pink-50">
-      <div class="mx-auto max-w-7xl px-8">
-        <!-- Navigation -->
-        <nav class="flex items-center justify-between py-6">
+  <body class="relative">
+    <div class="absolute -top-18 left-1/3 transform -translate-x-1/2 z-1">
+      <div
+        class="absolute left-1/2 h-[146px] w-[146px] -translate-x-1/2 transform rounded-full bg-red-600"
+      ></div>
+    </div>
+    <div class="bg-[#ffd4d0] ">
+      
+      <div class="mx-auto max-w-7xl px-8  ">
+        
+        <nav class="flex items-center justify-between py-6  ">
+          
           <div class="text-2xl font-bold">
-            <span class="text-red-600">RR</span>F EXAM
+            <img src="../src/assets/Logo.svg" alt="" />
           </div>
-          <div class="flex items-center">
-            <a href="#" class="mx-6">About</a>
-            <a href="#" class="mx-6">Services</a>
-            <a href="#" class="mx-6">Portfolio</a>
-            <a href="#" class="mx-6">Blog</a>
+          <div class="flex items-center text-[18px] font-bold z-2">
+            <a href="#" class="mx-[32px]">About</a>
+            <a href="#" class="mx-[32px]">Services</a>
+            <a href="#" class="mx-[32px]">Portfolio</a>
+            <a href="#" class="mx-[32px]">Blog</a>
           </div>
-          <button class="bg-gray-900 px-6 py-3 text-white">Let's Talk</button>
+          <button
+            class="bg-gray-900 px-6 py-3 text-[16px] font-bold text-white"
+          >
+            Let's Talk
+          </button>
         </nav>
 
         <!-- Hero Section -->
-        <div class="relative flex items-center justify-between py-16">
-          <div class="z-10">
+        <div class="relative flex items-center justify-between gap-y-16 pb-[80px] pt-[64px] -mb-[5px] ">
+          <div class="">
             <p class="mb-4 text-lg">UX Designer</p>
             <h1 class="text-6xl leading-tight font-bold text-gray-900">
               Hi There, I'm <br />
@@ -64,47 +75,28 @@
               </button>
             </div>
           </div>
-          <div class="relative z-10">
+          <div class="absolute right-0 bottom-0">
             <img
-              src="https://via.placeholder.com/500x600"
+            class=""
+              src="../src/assets/Group 1000001751.png"
               alt="UX Designer"
-              class="relative z-10"
+              
             />
-            <div class="absolute top-0 right-0">
-              <svg
-                width="600"
-                height="600"
-                viewBox="0 0 600 600"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M150 100 L300 100 L450 500 L300 500 Z"
-                  stroke="#FF3B1D"
-                  stroke-width="20"
-                  fill="none"
-                />
-                <path
-                  d="M200 200 C250 150, 350 150, 400 200"
-                  stroke="#1A1A1A"
-                  stroke-width="8"
-                  stroke-dasharray="15 15"
-                  fill="none"
-                />
-              </svg>
+            
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="bg-black text-white">
-      <main class="flex min-h-screen flex-col items-center justify-center">
         <!-- About Me Section -->
-        <section class="mx-auto max-w-[1440px] px-6 py-20 text-center">
-          <h1 class="mb-10 text-5xl font-bold md:text-6xl">About Me</h1>
 
-          <p class="mx-auto mb-16 max-w-3xl text-lg leading-relaxed md:text-xl">
+    <div class="relative bg-[#1f1f1f] text-white z-10  overflow-hidden relative ">
+      <main class="flex  flex-col items-center justify-center  ">
+        <section class="mx-auto text-center relative flex flex-col items-center justify-center px-[188px] pb-[80px]  pt-[64px]">
+
+          <h3 class="mb-10  font-bold md:text-6xl">About Me</h3>
+
+          <p class="mx-auto mb-16 max-w-3xl text-[16px] leading-relaxed md:text-x text-white">
             I'm John Smith, a UI/UX designer dedicated to crafting intuitive and
             visually stunning digital experiences. With a passion for
             user-centric design, I transform ideas into functional and beautiful
@@ -116,7 +108,7 @@
           <div class="mb-16 grid grid-cols-1 gap-10 md:grid-cols-3">
             <!-- Projects Done -->
             <div class="flex flex-col items-center">
-              <span class="text-accent text-6xl font-bold md:text-7xl"
+              <span class="text-accent text-6xl font-bold md:text-7xl text-[#FFD4D0]"
                 >502</span
               >
               <span class="mt-2 text-xl">Projects Done</span>
@@ -124,7 +116,7 @@
 
             <!-- Years of Experience -->
             <div class="flex flex-col items-center">
-              <span class="text-accent text-6xl font-bold md:text-7xl"
+              <span class="text-accent text-6xl font-bold md:text-7xl text-[#FFD4D0]"
                 >10+</span
               >
               <span class="mt-2 text-xl">Years of Experience</span>
@@ -132,7 +124,7 @@
 
             <!-- Clients Served -->
             <div class="flex flex-col items-center">
-              <span class="text-accent text-6xl font-bold md:text-7xl"
+              <span class="text-accent text-6xl font-bold md:text-7xl text-[#FFD4D0]"
                 >273+</span
               >
               <span class="mt-2 text-xl">Clients Served</span>
@@ -140,13 +132,16 @@
           </div>
 
           <!-- Red Circle Decoration -->
-          <div class="relative h-32 overflow-hidden">
-            <div
-              class="absolute left-1/2 h-64 w-64 -translate-x-1/2 transform rounded-full bg-red-600"
-            ></div>
-          </div>
+           
         </section>
+       
       </main>
+
+        <div
+          class="absolute -bottom-40 left-1/2 h-[234px] w-[234px] -translate-x-1/2 transform rounded-full bg-red-600"
+        ></div>
+      </div>
+      
     </div>
 
     <div class="bg-white font-sans">
