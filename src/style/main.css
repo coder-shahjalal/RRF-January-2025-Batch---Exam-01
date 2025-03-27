@@ -15,6 +15,9 @@ h3 {
   font-weight: 700;
 }
 
+p {
+  font-size: 16px;
+}
 .custom-container {
   width: 1440px;
 }
@@ -26,21 +29,19 @@ h3 {
   position: absolute;
   top: 50%;
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
   padding: 0;
   transform: translate(0, -50%);
   cursor: pointer;
-  color: #555;
-  border: none;
-  outline: none;
-  background: transparent;
+  color: #ffffff !important;
+  
   z-index: 1;
 }
 .slick-prev:before,
 .slick-next:before {
-  font-size: 30px;
-  color: #555;
+  font-size: 60px;
+  color: #050505 !important;
 }
 .slick-prev {
   left: -25px;
